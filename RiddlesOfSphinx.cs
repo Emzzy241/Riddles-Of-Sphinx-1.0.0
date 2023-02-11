@@ -23,6 +23,8 @@ class RiddlesOfSphinx
         {
             // now I know my user wants to Play Game
 
+            // RUNNING ME 4TH RIDDLE
+
             Console.WriteLine("Here is your First Riddle");
 
 
@@ -32,11 +34,6 @@ class RiddlesOfSphinx
             Console.WriteLine("C. Yam");
             Console.WriteLine("D. Plastics");
 
-            // Console.WriteLine("What Has to be broken before you can use it?");
-            // Console.WriteLine("A. Beans");
-            // Console.WriteLine("B. Egg");
-            // Console.WriteLine("C. Yam");
-            // Console.WriteLine("D. Plastics");
 
             string userAnswer = Console.ReadLine();
             // converting users answer into upper case; the standards of My Application
@@ -49,6 +46,8 @@ class RiddlesOfSphinx
 
 
                 // taking user's answer again
+                // RUNNING ME 2ND RIDDLE
+
                 string continueGame = Console.ReadLine();
                 continueGame = continueGame.ToUpper();
 
@@ -80,6 +79,8 @@ class RiddlesOfSphinx
 
 
                         // taking user's answer again
+                        // RUNNING ME 3RD RIDDLE
+
                         string secondContinueGame = Console.ReadLine();
                         secondContinueGame = secondContinueGame.ToUpper();
 
@@ -104,23 +105,38 @@ class RiddlesOfSphinx
                                 Console.WriteLine("Yay!..... You defeated the Sphinx in the 3rd Round");
                                 Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
 
-                                // running me 4th riddle
+                                // RUNNING ME 4TH RIDDLE
                                 // taking user's answer again
                                 string thirdContinueGame = Console.ReadLine();
                                 thirdContinueGame = thirdContinueGame.ToUpper();
 
                                 if (thirdContinueGame == "Y")
                                 {
-                                    Console.WriteLine("Here is your Third Riddle");
+                                    Console.WriteLine("Here is your Fourth Riddle");
 
-                                    Console.WriteLine("What five-letter word becomes shorter when you add two letters to it?");
+                                    Console.WriteLine("A word I know, six letters it contains, remove one letter and 12 remains.  What is it?");
 
-                                    Console.WriteLine("A. Tesla");
-                                    Console.WriteLine("B. Tired");
-                                    Console.WriteLine("C. Drink");
-                                    Console.WriteLine("D. Short");
+                                    Console.WriteLine("A. Dozens");
+                                    Console.WriteLine("B. Threes");
+                                    Console.WriteLine("C. Farmer");
+                                    Console.WriteLine("D. Harper");
 
-                                    Console.WriteLine("Times Defeated Sphinx = 2");
+                                    Console.WriteLine("Times Defeated Sphinx = 3");
+
+                                    string fourthAnswer = Console.ReadLine();
+                                    fourthAnswer = fourthAnswer.ToUpper();
+
+
+                                    if (thirdAnswer == "A")
+                                    {
+                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 3rd Round");
+                                        Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
+
+                                        // RUNNING ME 4TH RIDDLE
+                                        // taking user's answer again
+                                        string fourthContinueGame = Console.ReadLine();
+                                        fourthContinueGame = fourthContinueGame.ToUpper();
+                                    }
 
 
 
@@ -199,7 +215,6 @@ class RiddlesOfSphinx
                         }
                     }
 
-                    // no need to write the else again, because opposite of an if statement is an else statement
 
 
 
