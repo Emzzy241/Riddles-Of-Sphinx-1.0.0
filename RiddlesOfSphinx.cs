@@ -45,7 +45,7 @@ class RiddlesOfSphinx
             if (upperUserAnswer == "B")
             {
                 Console.WriteLine("Yay!..... You defeated the Sphinx in the first Round");
-                Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to start Game Again and N to End Game]");
+                Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue Game Again and N to End Game]");
 
 
                 // taking user's answer again
@@ -74,14 +74,33 @@ class RiddlesOfSphinx
 
                     if (upperSecondAnswer == "A")
                     {
-                        Console.WriteLine("Yay!..... You defeated the Sphinx in the first Round");
-                        Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to start Game Again and N to End Game]");
+                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 2nd Round");
+                        Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
 
 
                         // taking user's answer again
-                        string continueGame = Console.ReadLine();
-                        string upperContinueGame = continueGame.ToUpper();
+                        string secondContinueGame = Console.ReadLine();
+                        string upperSecondContinueGame = continueGame.ToUpper();
 
+                        if (upperSecondContinueGame == "Y")
+                        {
+                            Console.WriteLine("Here is your THird Riddle");
+
+
+                            Console.WriteLine("What Fi?");
+                            Console.WriteLine("A. Candle");
+                            Console.WriteLine("B. Dog");
+                            Console.WriteLine("C. Stick");
+                            Console.WriteLine("D. Broom");
+
+                        }
+
+
+
+                    }
+                    else if (upperSecondAnswer == "N")
+                    {
+                        Console.WriteLine("Goodbye My Dear User :)");
                     }
 
 
