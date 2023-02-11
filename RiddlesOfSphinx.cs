@@ -17,9 +17,9 @@ class RiddlesOfSphinx
 
         // working on case sensitivity
 
-        playGame = playGame.ToLower();
+        playGame = playGame.ToUpper();
 
-        if (playGame == "y")
+        if (playGame == "Y")
         {
             // now I know my user wants to Play Game
 
@@ -39,10 +39,10 @@ class RiddlesOfSphinx
             // Console.WriteLine("D. Plastics");
 
             string userAnswer = Console.ReadLine();
+            // converting users answer into upper case; the standards of My Application
+            userAnswer = userAnswer.ToUpper();
 
-            string upperUserAnswer = userAnswer.ToUpper();
-
-            if (upperUserAnswer == "B")
+            if (userAnswer == "B")
             {
                 Console.WriteLine("Yay!..... You defeated the Sphinx in the first Round");
                 Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue Game Again and N to End Game]");
@@ -50,9 +50,9 @@ class RiddlesOfSphinx
 
                 // taking user's answer again
                 string continueGame = Console.ReadLine();
-                string upperContinueGame = continueGame.ToUpper();
+                continueGame = continueGame.ToUpper();
 
-                if (upperContinueGame == "Y")
+                if (continueGame == "Y")
                 {
 
                     Console.WriteLine("Here is your Second Riddle");
@@ -70,9 +70,10 @@ class RiddlesOfSphinx
                     // determining the answer of 2nd Riddle
 
                     string userSecondAnswer = Console.ReadLine();
-                    string upperSecondAnswer = userSecondAnswer.ToUpper();
 
-                    if (upperSecondAnswer == "A")
+                    userSecondAnswer = userSecondAnswer.ToUpper();
+
+                    if (userSecondAnswer == "A")
                     {
                         Console.WriteLine("Yay!..... You defeated the Sphinx in the 2nd Round");
                         Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
@@ -80,65 +81,154 @@ class RiddlesOfSphinx
 
                         // taking user's answer again
                         string secondContinueGame = Console.ReadLine();
-                        string upperSecondContinueGame = continueGame.ToUpper();
+                        secondContinueGame = secondContinueGame.ToUpper();
 
-                        if (upperSecondContinueGame == "Y")
+                        if (secondContinueGame == "Y")
                         {
-                            Console.WriteLine("Here is your THird Riddle");
+                            Console.WriteLine("Here is your Third Riddle");
+
+                            Console.WriteLine("What five-letter word becomes shorter when you add two letters to it?");
+
+                            Console.WriteLine("A. Tesla");
+                            Console.WriteLine("B. Tired");
+                            Console.WriteLine("C. Drink");
+                            Console.WriteLine("D. Short");
+
+                            Console.WriteLine("Times Defeated Sphinx = 2");
+
+                            string thirdAnswer = Console.ReadLine();
+                            thirdAnswer = thirdAnswer.ToUpper();
+
+                            if (thirdAnswer == "D")
+                            {
+                                Console.WriteLine("Yay!..... You defeated the Sphinx in the 3rd Round");
+                                Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
+
+                                // running me 4th riddle
+                                // taking user's answer again
+                                string thirdContinueGame = Console.ReadLine();
+                                thirdContinueGame = thirdContinueGame.ToUpper();
+
+                                if (thirdContinueGame == "Y")
+                                {
+                                    Console.WriteLine("Here is your Third Riddle");
+
+                                    Console.WriteLine("What five-letter word becomes shorter when you add two letters to it?");
+
+                                    Console.WriteLine("A. Tesla");
+                                    Console.WriteLine("B. Tired");
+                                    Console.WriteLine("C. Drink");
+                                    Console.WriteLine("D. Short");
+
+                                    Console.WriteLine("Times Defeated Sphinx = 2");
 
 
-                            Console.WriteLine("What Fi?");
-                            Console.WriteLine("A. Candle");
-                            Console.WriteLine("B. Dog");
-                            Console.WriteLine("C. Stick");
-                            Console.WriteLine("D. Broom");
 
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                                    Console.WriteLine("You failed this round, would you like to try again?");
+                                    Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                                    string startAgain = Console.ReadLine();
+                                    startAgain = startAgain.ToUpper();
+
+                                    if (startAgain == "Y")
+                                    {
+                                        // running the Main() method entrypoint to play game again
+                                        Main();
+                                    }
+                                    else if (startAgain == "N")
+                                    {
+                                        Console.WriteLine("Goodbye My Dear User :)");
+                                    }
+                                }
+
+
+
+
+
+                            }
+
+
+
+
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                            Console.WriteLine("You failed this round, would you like to try again?");
+                            Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                            string thirdStartAgain = Console.ReadLine();
+                            thirdStartAgain = thirdStartAgain.ToUpper();
+
+                            if (thirdStartAgain == "Y")
+                            {
+                                // running the Main() method entrypoint to play game again
+                                Main();
+                            }
+                            else if (thirdStartAgain == "N")
+                            {
+                                Console.WriteLine("Goodbye My Dear User :)");
+                            }
                         }
 
 
-
                     }
-                    else if (upperSecondAnswer == "N")
+                    else
+                    {
+                        Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                        Console.WriteLine("You failed this round, would you like to try again?");
+                        Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                        string secondStartAgain = Console.ReadLine();
+                        secondStartAgain = secondStartAgain.ToUpper();
+
+                        if (secondStartAgain == "Y")
+                        {
+                            // running the Main() method entrypoint to play game again
+                            Main();
+                        }
+                        else if (secondStartAgain == "N")
+                        {
+                            Console.WriteLine("Goodbye My Dear User :)");
+                        }
+                    }
+
+                    // no need to write the else again, because opposite of an if statement is an else statement
+
+
+
+
+
+                }
+                else
+                {
+                    Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                    Console.WriteLine("You failed this round, would you like to try again?");
+                    Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                    string startAgain = Console.ReadLine();
+                    startAgain = startAgain.ToUpper();
+
+                    if (startAgain == "Y")
+                    {
+                        // running the Main() method entrypoint to play game again
+                        Main();
+                    }
+                    else if (startAgain == "N")
                     {
                         Console.WriteLine("Goodbye My Dear User :)");
                     }
-
-
                 }
-                else if (upperContinueGame == "N")
-                {
-                    Console.WriteLine("Goodbye My Dear User :)");
-                }
-
-                // no need to write the else again, because opposite of an if statement is an else statement
-
-
-
 
 
             }
-            else
-            {
-                Console.WriteLine("Ouch! Sphinx has just eaten up your character");
-                Console.WriteLine("You failed this round, would you like to try again?");
-                Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
-
-                string startAgain = Console.ReadLine();
-                string upperStartAgain = startAgain.ToUpper();
-
-                if (upperStartAgain == "Y")
-                {
-                    // running the Main() method entrypoint to play game again
-                    Main();
-                }
-                else if (upperStartAgain == "N")
-                {
-                    Console.WriteLine("Goodbye My Dear User :)");
-                }
-            }
-
 
         }
-
     }
 }
