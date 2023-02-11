@@ -129,7 +129,7 @@ class RiddlesOfSphinx
 
                                     if (fourthAnswer == "A")
                                     {
-                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 3rd Round");
+                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 4th Round");
                                         Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
 
                                         // RUNNING ME 5TH RIDDLE
@@ -156,7 +156,7 @@ class RiddlesOfSphinx
 
                                             if (fifthAnswer == "B")
                                             {
-                                                Console.WriteLine("Yay!..... You defeated the Sphinx in the 4th Round");
+                                                Console.WriteLine("Yay!..... You defeated the Sphinx in the 5th Round");
                                                 Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
 
 
@@ -178,43 +178,166 @@ class RiddlesOfSphinx
                                                     Console.WriteLine("D. Child");
 
                                                     Console.WriteLine("Times Defeated Sphinx = 5");
-                                                    if (fifthAnswer == "A")
+
+                                                    string sixthAnswer = Console.ReadLine();
+                                                    sixthAnswer = sixthAnswer.ToUpper();
+
+
+                                                    if (sixthAnswer == "A")
                                                     {
-                                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 5th Round");
+                                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 6th Round");
                                                         Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
 
-                                                    }
-                                                    else
-                                                    {
-                                                        Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
-                                                        Console.WriteLine("You failed this round, would you like to try again?");
-                                                        Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                                                        string fifthStartAgain = Console.ReadLine();
-                                                        fifthStartAgain = fifthStartAgain.ToUpper();
 
-                                                        if (fifthStartAgain == "Y")
+                                                        string seventhContinueGame = Console.ReadLine();
+                                                        seventhContinueGame = seventhContinueGame.ToUpper();
+                                                        if (seventhContinueGame == "Y")
                                                         {
-                                                            // running the Main() method entrypoint to play game again
-                                                            Main();
+                                                            Console.WriteLine("Here is your Seventh Riddle");
+
+                                                            Console.WriteLine("I have lakes with no water, mountains with no stone and cities with no buildings.  What am I?");
+
+                                                            Console.WriteLine("A. A map");
+                                                            Console.WriteLine("B. A Townhall");
+                                                            Console.WriteLine("C. A Church");
+                                                            Console.WriteLine("D. THe Eiffel Tower");
+
+                                                            Console.WriteLine("Times Defeated Sphinx = 6");
+
+                                                            string seventhAnswer = Console.ReadLine();
+                                                            seventhAnswer = seventhAnswer.ToUpper();
+
+                                                            if (seventhAnswer == "A")
+                                                            {
+                                                                Console.WriteLine("Yay!..... You defeated the Sphinx in the 7th Round");
+                                                                Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
+
+
+
+                                                                string eightContinueGame = Console.ReadLine();
+                                                                eightContinueGame = seventhContinueGame.ToUpper();
+
+                                                                if (eightContinueGame == "Y")
+                                                                {
+
+                                                                    Console.WriteLine("Here is your Eight Riddle");
+
+                                                                    Console.WriteLine("THe person who uses it can neither feel it nor see it.  What is it?");
+
+                                                                    Console.WriteLine("A. A Parachute");
+                                                                    Console.WriteLine("B. A Coffin");
+                                                                    Console.WriteLine("C. The Internet");
+                                                                    Console.WriteLine("D. An iPhone");
+
+                                                                    Console.WriteLine("Times Defeated Sphinx = 7");
+
+                                                                    // CHECKING IF user's eight answer ANSWER IS CORRECT
+                                                                    string eightAnswer = Console.ReadLine();
+                                                                    eightAnswer = eightAnswer.ToUpper();
+
+                                                                    if (eightAnswer == "B")
+                                                                    {
+                                                                        Console.WriteLine("Yay!..... You defeated the Sphinx in the 8th Round");
+                                                                        Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to continue game and N to End Game]");
+
+                                                                        // DETERMINING if user would like to continue game
+
+                                                                        string ninthContinueGame = Console.ReadLine();
+                                                                        ninthContinueGame = ninthContinueGame.ToUpper();
+
+                                                                        if (ninthContinueGame == "Y")
+                                                                        {
+                                                                            Console.WriteLine("Here is your Ninth Riddle");
+
+                                                                            Console.WriteLine("What building has the most stories?");
+
+                                                                            Console.WriteLine("A. The Library");
+                                                                            Console.WriteLine("B. The Townhall");
+                                                                            Console.WriteLine("C. An Ark");
+                                                                            Console.WriteLine("D. A Cave");
+
+                                                                            Console.WriteLine("Times Defeated Sphinx = 8");
+
+                                                                            // DETERMINING IF user's ninth answer is correct
+                                                                            string ninthAnswer = Console.ReadLine();
+                                                                            ninthAnswer = ninthAnswer.ToUpper();
+
+                                                                            if (ninthAnswer == "A")
+                                                                            {
+                                                                                Console.WriteLine("Yay!..... You defeated the Sphinx in the 9th Round");
+                                                                                Console.WriteLine("Would you like to advance to the last round(the 10th round)?");
+
+                                                                                // DETERMINING if user would like to continue game
+
+                                                                                string tenthContinueGame = Console.ReadLine();
+                                                                                tenthContinueGame = tenthContinueGame.ToUpper();
+
+                                                                                if (tenthContinueGame == "Y")
+                                                                                {
+                                                                                    Console.WriteLine("Here is your FInal ROund, ensure you get the riddle :) ");
+
+                                                                                    Console.WriteLine("I am always hungry and will die if not fed, but whatever I touch will soon turn red. What am I?");
+
+                                                                                    Console.WriteLine("A. Harmattan");
+                                                                                    Console.WriteLine("B. Breeze");
+                                                                                    Console.WriteLine("C. Storm");
+                                                                                    Console.WriteLine("D. Fire");
+
+                                                                                    Console.WriteLine("Times Defeated Sphinx = 8");
+
+                                                                                    // DETERMINING IF user's ninth answer is correct
+                                                                                    string tenthAnswer = Console.ReadLine();
+                                                                                    tenthAnswer = tenthAnswer.ToUpper();
+
+
+
+                                                                                }
+
+
+                                                                            }
+                                                                        }
+
+
+                                                                    }
+                                                                    else if (seventhContinueGame == "N")
+                                                                    {
+                                                                        Console.WriteLine("Goodbye My Dear User :)");
+                                                                    }
+                                                                }
+
+                                                            }
+                                                            else if (seventhContinueGame == "N")
+                                                            {
+                                                                Console.WriteLine("Goodbye My Dear User :)");
+                                                            }
+
                                                         }
-                                                        else if (fifthStartAgain == "N")
+                                                        else
                                                         {
-                                                            Console.WriteLine("Goodbye My Dear User :)");
+                                                            Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                                                            Console.WriteLine("You failed this round, would you like to try again?");
+                                                            Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                                                            string fifthStartAgain = Console.ReadLine();
+                                                            fifthStartAgain = fifthStartAgain.ToUpper();
+
+                                                            if (fifthStartAgain == "Y")
+                                                            {
+                                                                // running the Main() method entrypoint to play game again
+                                                                Main();
+                                                            }
+                                                            else if (fifthStartAgain == "N")
+                                                            {
+                                                                Console.WriteLine("Goodbye My Dear User :)");
+                                                            }
                                                         }
+
+
                                                     }
 
 
                                                 }
-                                                else if (sixthContinueGame == "N")
-                                                {
-                                                    Console.WriteLine("Goodbye My Dear User :)");
-                                                }
-
-
-
-
-
 
                                             }
                                             else
@@ -345,4 +468,3 @@ class RiddlesOfSphinx
             }
         }
     }
-}
