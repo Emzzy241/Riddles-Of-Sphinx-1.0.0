@@ -54,8 +54,37 @@ class RiddlesOfSphinx
 
                 if (upperContinueGame == "Y")
                 {
-                    // running the Main() method entrypoint to play game again
-                    Main();
+
+                    Console.WriteLine("Here is your Second Riddle");
+
+
+                    Console.WriteLine("I am tall when I'm young, and I'm short when I'm old, what am I?");
+                    Console.WriteLine("A. Candle");
+                    Console.WriteLine("B. Dog");
+                    Console.WriteLine("C. Stick");
+                    Console.WriteLine("D. Broom");
+
+
+                    Console.WriteLine("Times Defeated Sphinx = 1");
+
+                    // determining the answer of 2nd Riddle
+
+                    string userSecondAnswer = Console.ReadLine();
+                    string upperSecondAnswer = userSecondAnswer.ToUpper();
+
+                    if (upperSecondAnswer == "A")
+                    {
+                        Console.WriteLine("Yay!..... You defeated the Sphinx in the first Round");
+                        Console.WriteLine("Would you like to keep defeating Sphinx?, Enter [Y to start Game Again and N to End Game]");
+
+
+                        // taking user's answer again
+                        string continueGame = Console.ReadLine();
+                        string upperContinueGame = continueGame.ToUpper();
+
+                    }
+
+
                 }
                 else if (upperContinueGame == "N")
                 {
