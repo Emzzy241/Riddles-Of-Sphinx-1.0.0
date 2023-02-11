@@ -275,7 +275,7 @@ class RiddlesOfSphinx
 
                                                                                 if (tenthContinueGame == "Y")
                                                                                 {
-                                                                                    Console.WriteLine("Here is your FInal ROund, ensure you get the riddle :) ");
+                                                                                    Console.WriteLine("Here is your Final ROund, ensure you get the riddle :) ");
 
                                                                                     Console.WriteLine("I am always hungry and will die if not fed, but whatever I touch will soon turn red. What am I?");
 
@@ -284,7 +284,7 @@ class RiddlesOfSphinx
                                                                                     Console.WriteLine("C. Storm");
                                                                                     Console.WriteLine("D. Fire");
 
-                                                                                    Console.WriteLine("Times Defeated Sphinx = 8");
+                                                                                    Console.WriteLine("Times Defeated Sphinx = 9");
 
                                                                                     // DETERMINING IF user's ninth answer is correct
                                                                                     string tenthAnswer = Console.ReadLine();
@@ -391,100 +391,75 @@ class RiddlesOfSphinx
 
 
                                                         }
-                                                        else
-                                                        {
-                                                            Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
-                                                            Console.WriteLine("You failed this round, would you like to try again?");
-                                                            Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
-
-                                                            string fifthStartAgain = Console.ReadLine();
-                                                            fifthStartAgain = fifthStartAgain.ToUpper();
-
-                                                            if (fifthStartAgain == "Y")
-                                                            {
-                                                                // running the Main() method entrypoint to play game again
-                                                                Main();
-                                                            }
-                                                            else if (fifthStartAgain == "N")
-                                                            {
-                                                                Console.WriteLine("Goodbye My Dear User :)");
-                                                            }
-                                                        }
-
-
                                                     }
-                                                    else
+
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                                                    Console.WriteLine("You failed this round, would you like to try again?");
+                                                    Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                                                    string sixthStartAgain = Console.ReadLine();
+                                                    sixthStartAgain = sixthStartAgain.ToUpper();
+
+                                                    if (sixthStartAgain == "Y")
                                                     {
-                                                        Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
-                                                        Console.WriteLine("You failed this round, would you like to try again?");
-                                                        Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
-
-                                                        string sixthStartAgain = Console.ReadLine();
-                                                        sixthStartAgain = sixthStartAgain.ToUpper();
-
-                                                        if (sixthStartAgain == "Y")
-                                                        {
-                                                            // running the Main() method entrypoint to play game again
-                                                            Main();
-                                                        }
-                                                        else if (sixthStartAgain == "N")
-                                                        {
-                                                            Console.WriteLine("Goodbye My Dear User :)");
-                                                        }
+                                                        // running the Main() method entrypoint to play game again
+                                                        Main();
                                                     }
-
-
-
-
+                                                    else if (sixthStartAgain == "N")
+                                                    {
+                                                        Console.WriteLine("Goodbye My Dear User :)");
+                                                    }
                                                 }
+
+
+
 
                                             }
-                                            else
-                                            {
-                                                Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
-                                                Console.WriteLine("You failed this round, would you like to try again?");
-                                                Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                                                string fifthStartAgain = Console.ReadLine();
-                                                fifthStartAgain = fifthStartAgain.ToUpper();
-
-                                                if (fifthStartAgain == "Y")
-                                                {
-                                                    // running the Main() method entrypoint to play game again
-                                                    Main();
-                                                }
-                                                else if (fifthStartAgain == "N")
-                                                {
-                                                    Console.WriteLine("Goodbye My Dear User :)");
-                                                }
-                                            }
                                         }
-
-
                                         else
                                         {
                                             Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
                                             Console.WriteLine("You failed this round, would you like to try again?");
                                             Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                                            string fourthStartAgain = Console.ReadLine();
-                                            fourthStartAgain = fourthStartAgain.ToUpper();
+                                            string fifthStartAgain = Console.ReadLine();
+                                            fifthStartAgain = fifthStartAgain.ToUpper();
 
-                                            if (fourthStartAgain == "Y")
+                                            if (fifthStartAgain == "Y")
                                             {
                                                 // running the Main() method entrypoint to play game again
                                                 Main();
                                             }
-                                            else if (fourthStartAgain == "N")
+                                            else if (fifthStartAgain == "N")
                                             {
                                                 Console.WriteLine("Goodbye My Dear User :)");
                                             }
                                         }
+                                    }
 
 
+                                    else
+                                    {
+                                        Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                                        Console.WriteLine("You failed this round, would you like to try again?");
+                                        Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
+                                        string fourthStartAgain = Console.ReadLine();
+                                        fourthStartAgain = fourthStartAgain.ToUpper();
 
-
+                                        if (fourthStartAgain == "Y")
+                                        {
+                                            // running the Main() method entrypoint to play game again
+                                            Main();
+                                        }
+                                        else if (fourthStartAgain == "N")
+                                        {
+                                            Console.WriteLine("Goodbye My Dear User :)");
+                                        }
                                     }
 
 
@@ -492,25 +467,9 @@ class RiddlesOfSphinx
 
 
                                 }
-                                else
-                                {
-                                    Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
-                                    Console.WriteLine("You failed this round, would you like to try again?");
-                                    Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                                    string thirdStartAgain = Console.ReadLine();
-                                    thirdStartAgain = thirdStartAgain.ToUpper();
 
-                                    if (thirdStartAgain == "Y")
-                                    {
-                                        // running the Main() method entrypoint to play game again
-                                        Main();
-                                    }
-                                    else if (thirdStartAgain == "N")
-                                    {
-                                        Console.WriteLine("Goodbye My Dear User :)");
-                                    }
-                                }
+
 
 
                             }
@@ -520,23 +479,19 @@ class RiddlesOfSphinx
                                 Console.WriteLine("You failed this round, would you like to try again?");
                                 Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                                string secondStartAgain = Console.ReadLine();
-                                secondStartAgain = secondStartAgain.ToUpper();
+                                string thirdStartAgain = Console.ReadLine();
+                                thirdStartAgain = thirdStartAgain.ToUpper();
 
-                                if (secondStartAgain == "Y")
+                                if (thirdStartAgain == "Y")
                                 {
                                     // running the Main() method entrypoint to play game again
                                     Main();
                                 }
-                                else if (secondStartAgain == "N")
+                                else if (thirdStartAgain == "N")
                                 {
                                     Console.WriteLine("Goodbye My Dear User :)");
                                 }
                             }
-
-
-
-
 
 
                         }
@@ -546,24 +501,50 @@ class RiddlesOfSphinx
                             Console.WriteLine("You failed this round, would you like to try again?");
                             Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
 
-                            string startAgain = Console.ReadLine();
-                            startAgain = startAgain.ToUpper();
+                            string secondStartAgain = Console.ReadLine();
+                            secondStartAgain = secondStartAgain.ToUpper();
 
-                            if (startAgain == "Y")
+                            if (secondStartAgain == "Y")
                             {
                                 // running the Main() method entrypoint to play game again
                                 Main();
                             }
-                            else if (startAgain == "N")
+                            else if (secondStartAgain == "N")
                             {
                                 Console.WriteLine("Goodbye My Dear User :)");
                             }
                         }
 
 
+
+
+
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ouch! Sphinx has just eaten up your avatar");
+                        Console.WriteLine("You failed this round, would you like to try again?");
+                        Console.WriteLine("Enter [Y to start Game Again and N to End Game]");
+
+                        string startAgain = Console.ReadLine();
+                        startAgain = startAgain.ToUpper();
+
+                        if (startAgain == "Y")
+                        {
+                            // running the Main() method entrypoint to play game again
+                            Main();
+                        }
+                        else if (startAgain == "N")
+                        {
+                            Console.WriteLine("Goodbye My Dear User :)");
+                        }
                     }
 
+
                 }
+
             }
         }
     }
+}
