@@ -6,6 +6,10 @@ class RiddlesOfSphinx
 
     static void Main()
     {
+        // RIDDLE GAME HAS BEEN PUSHED BUT I STILL NEED TO WRITE A RANDOMIZER METHOD
+        // A METHOD THAT IS CAPABLE OF RANDOMIZING THE QUESTIONS EVERYTIME THE GAME IS RUN
+        
+
         // after the Main() entry point for my application, Let's write some code
 
         // First Aim, asking user's a riddle
